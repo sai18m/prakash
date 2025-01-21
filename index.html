@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      max-width: 300px;
+      margin-left: 20px;
+      text-align: center;
+      font-family: arial;
+      flex: 1;
+    }
+
+    .title {
+      color: grey;
+      font-size: 18px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+      font-size: 18px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 22px;
+      color: black;
+      padding: 5px;
+    }
+
+    p {
+      padding: 5px;
+      font-size: 25px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    button:hover, a:hover {
+      opacity: 0.7;
+    }
+
+    h1 {
+      font-family: fantasy;
+    }
+
+    .container {
+      width: 60%;
+      max-width: 1200px;
+      margin-left: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: none;
+      flex: 2;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .button1 {
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      background-color: #000;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
+      .container {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .card {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="prakash.jpg" alt="prakash" style="width: 280px; height:250px; object-fit: cover;">
+    <h1>sai prakash</h1>
+    <p class="title">web developer</p>
+    <p>Adikavi Nannaya University</p>
+    <div style="margin: 24px 0;">
+      <a href="https://github.com/sai18m"><i class="fa fa-github"></i></a> 
+      <a href="https://www.linkedin.com/in/sai-prakash-711508280"><i class="fa fa-linkedin"></i></a>  
+      <a href="mailto:pprakxsh09@icloud.com"><i class="fa fa-envelope"></i></a> 
+    </div>
+    <p><button onclick="window.location.href='mailto:pprakxsh09@icloud.com'">Contact</button></p>
+  </div>
+
+  <div class="container">
+    <h1>Light (alias)</h1>
+    <h3>here's What am I & what can I do !!</h3>
+    <p style="display: none;"><b>I am a passionate and dedicated web developer with a deep love for crafting user-centric, functional, and visually engaging digital experiences. With a strong foundation in both front-end and back-end technologies, I specialize in creating responsive, dynamic, and scalable websites and web applications that solve real-world problems and provide seamless user experiences.
+    </b></p>
+    <p> I am a full-stack web developer who takes pride in building powerful, flexible, and user-friendly web applications. I am committed to delivering high-quality solutions and excited about the future of web development and the opportunity to contribute to the ever-evolving digital landscape.
+    </p>
+    
+      <a class="button1" href="resume.html">Resume</a>  <a class="button1" href="projects.html">Projects</a>
+  </div>
+
+</body>
+</html>
